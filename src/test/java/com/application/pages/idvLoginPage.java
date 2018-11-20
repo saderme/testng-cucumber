@@ -16,6 +16,7 @@ import com.framework.webelements.LabelElement;
 import com.framework.webelements.LinkElement;
 import com.framework.webelements.TextFieldElement;
 import com.framework.webelements.webBasePage;
+import com.test.testdatatypes.LoginPOJO;
 import com.framework.utilities.MasterHelper;
 public class idvLoginPage extends webBasePage {
 	
@@ -46,7 +47,15 @@ public class idvLoginPage extends webBasePage {
 		//Using JS to Click and not Selenium as the popup is preventing click
 		MasterHelper.clickElement(nextBtn.getElement());
 	}
-
+	
+	//This method gets data from the json login pojo that is passed through
+	public void login(LoginPOJO login) {
+		userid.sendKeys(login.getUsername());
+		password.sendKeys(login.getPassword());
+		//Using JS to Click and not Selenium as the popup is preventing click
+		MasterHelper.clickElement(nextBtn.getElement());
+	}
+	
 	public  HtmlElement getHTuserid() {
 		return userid;
 	}

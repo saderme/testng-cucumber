@@ -13,3 +13,10 @@
 [1119/121139.512:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
 [1119/125153.040:ERROR:file_io_win.cc(170)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15628_2942\Crashpad\reports\f9797294-5ecc-4e18-8c26-6b52f65d10cf.dmp: The system cannot find the path specified. (0x3)
 [1119/125153.048:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[1119/142200.685:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17364_6586\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1119/142200.703:ERROR:file_io_win.cc(170)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17364_6586\Crashpad\reports\dc292268-c63b-4405-98c0-08c784560593.dmp: The system cannot find the path specified. (0x3)
+[1119/142200.703:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[1119/142448.705:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir16568_12132\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1120/153102.053:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17152_16548\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1120/153102.081:ERROR:file_io_win.cc(170)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17152_16548\Crashpad\reports\07d458d6-fc70-4298-a80c-6f66d0045fe4.dmp: The system cannot find the path specified. (0x3)
+[1120/153102.081:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed

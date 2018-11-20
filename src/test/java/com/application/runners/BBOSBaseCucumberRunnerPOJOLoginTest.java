@@ -45,25 +45,25 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		strict = true, monochrome = true, 
 		features = "src/test/resources/features", 
 		glue = "stepdefinition", plugin = {
-		"pretty", "html:target/cucumber-html-report-search" }, 
-		tags = { "@Search" }
+		"pretty", "html:target/cucumber-html-report-loginpojo" }, 
+		tags = { "@Loginpojo" }
 		)
 
-public class BBOSBaseCucumberRunnerSearchTest extends AbstractTestNGCucumberTests {
+public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberTests {
 
 	public static Properties config = null;
-	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//config.properties");
+	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//bbosconfig.properties");
 	//protected WebDriver driver  = DriverFactory.getInstance().getDriver();
 	protected WebDriver driver;
 	protected MasterHelper mhelper;
-	private static final Logger applog = TestLogger.getLogger(BBOSBaseCucumberRunnerLoginTest.class);
+	private static final Logger applog = TestLogger.getLogger(BBOSBaseCucumberRunnerPOJOLoginTest.class);
 	private Date start;
 
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Exception {
 		long threadId = Thread.currentThread().getId();
 		start = new Date();
-		TestLogger.logAppLogInfo(applog, "@BeforeSuite - BaseCucumberSearchTest - Thread: " + threadId + " Test Suite Started: " + start.getTime());
+		TestLogger.logAppLogInfo(applog, "@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + " Test Suite Started: " + start.getTime());
 	}
 
 	public void explicitWait(WebElement element) {
@@ -81,20 +81,26 @@ public class BBOSBaseCucumberRunnerSearchTest extends AbstractTestNGCucumberTest
 	@AfterClass(alwaysRun = true)
 	public void takeScreenshot() throws IOException {
 		long threadId = Thread.currentThread().getId();
-		TestLogger.logAppLogInfo(applog, "@AfterClass - BaseCucumberSearchTest Threadid" + threadId);
+		TestLogger.logAppLogInfo(applog, "@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Threadid" + threadId);
+/*		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		//File trgtFile = new File(System.getProperty("user.dir") + "//screenshots/screenshot.png");
+		File trgtFile = new File(System.getProperty("user.dir") + GlobalConfig.SCREENSHOT_PATH);
+		trgtFile.getParentFile().mkdir();
+		trgtFile.createNewFile();
+		Files.copy(scrFile, trgtFile);*/
 	}
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"headless" , "softassert"})
 	public void before(String headless, String softassert) throws Exception {
 		long threadId = Thread.currentThread().getId();
+		TestLogger.logAppLogInfo(applog, "@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId);
 		String processName = ManagementFactory.getRuntimeMXBean().getName();
-		TestLogger.logAppLogInfo(applog, "@BeforeMethod BaseCucumberSearchTest - Thread: " + threadId);
 		System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
 		GlobalConfig.configureDriverPath();
 		GlobalConfig.setHeadless(headless);
 		GlobalConfig.setSoftAssert(softassert);
-		
+	
 		driver = DriverFactory.getInstance().getDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConfig.DEFAULT_IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
@@ -107,11 +113,19 @@ public class BBOSBaseCucumberRunnerSearchTest extends AbstractTestNGCucumberTest
 	@AfterMethod(alwaysRun = true)
 	public void tearDownr(final Method method, ITestResult result) throws IOException {
 		long threadId = Thread.currentThread().getId();
-		System.out.println("@AfterMethod - BaseCucumberSearchTest " + method.getName());
+		System.out.println("@AfterMethod   BBOSBaseCucumberRunnerPOJOLoginTest " + method.getName());
 		if (result.isSuccess()) {
 			TestLogger.logAppLogInfo(applog, "@AfterMethod - Thread: " + threadId + " SUCCESS");
+/*			File imageFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			String failureImageFileName = result.getMethod().getMethodName()
+					+ new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
+			//File failureImageFile = new File(System.getProperty("user.dir") + "//screenshots//" + failureImageFileName);
+			File failureImageFile = new File(System.getProperty("user.dir") + GlobalConfig.SCREENSHOT_PATH + failureImageFileName);
+			failureImageFile.getParentFile().mkdir();
+			failureImageFile.createNewFile();
+			Files.copy(imageFile, failureImageFile);*/
 		} else {
-			TestLogger.logAppLogInfo(applog, "@AfterMethod BaseCucumberSearchTest - Thread: " + threadId + "Method: " + method.getName() + " FAIL");
+			TestLogger.logAppLogInfo(applog, "@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + "Method: " + method.getName() + " FAIL");
 		}
 		DriverFactory.getInstance().removeDriver();
 	}
@@ -119,6 +133,6 @@ public class BBOSBaseCucumberRunnerSearchTest extends AbstractTestNGCucumberTest
 	@AfterSuite(alwaysRun = true)
 	public void quit() throws IOException, InterruptedException {
 		long threadId = Thread.currentThread().getId();
-		TestLogger.logAppLogInfo(applog, "@AfterSuite -BaseCucumberSearchTest - Thread: " + threadId + "Test Suite Ended: " + start.getTime());
+		TestLogger.logAppLogInfo(applog, "@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + "Test Suite Ended: " + start.getTime());
 	}
 }

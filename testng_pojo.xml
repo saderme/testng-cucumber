@@ -4,14 +4,9 @@
 	<parameter name="headless" value="false" /> 
 	<parameter name="softassert" value="true" />  
 	
-  <test name="Run Login Tests">
+  <test name="Run Login Tests with data from Pojo">
   <classes>
- 	 <class name="com.application.runners.BBOSBaseCucumberRunnerLoginTest"></class>
-  </classes>
-  </test>
-  <test name="Run Search Tests">
-  <classes>
- 	 <class name="com.application.runners.BBOSBaseCucumberRunnerSearchTest"></class>
+ 	 <class name="com.application.runners.BBOSBaseCucumberRunnerPOJOLoginTest"></class>
   </classes>
   </test>
 </suite> <!-- Suite -->

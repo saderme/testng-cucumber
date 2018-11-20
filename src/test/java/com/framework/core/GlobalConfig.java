@@ -29,8 +29,11 @@ public class GlobalConfig {
     public static String TEST_DATA_PATH;
     public static String SCREENSHOT_PATH;
     public static String APP_URL;   
-    public static String PAGE_LOAD_TIMEOUT;   
+    public static String PAGE_LOAD_TIMEOUT;  
+    public static String TESTDATA_RESOURCE_PATH;    
+
     public static boolean SOFT_ASSERT = false;  //set via testng parameter
+    public static String HEADLESS;   
     
     public GlobalConfig(String configFile) {
       	ConfigurationReader cr = new ConfigurationReader(configFile);
@@ -49,6 +52,9 @@ public class GlobalConfig {
  		GlobalConfig.EXTENT_REPORT_FILENAME = cr.getProperty("extentreportpathFileName");
  		GlobalConfig.TEST_DATA_PATH = cr.getProperty("testdatapath");
  		GlobalConfig.SCREENSHOT_PATH = cr.getProperty("screenshotpath");
+ 		GlobalConfig.TESTDATA_RESOURCE_PATH = cr.getProperty("testDataResourcePath");
+ 	    
+ 		GlobalConfig.HEADLESS = "false";
     }
     
     public static String getTestDataPath(){
@@ -64,7 +70,11 @@ public class GlobalConfig {
     	System.out.println("Setting SoftAssert to false");}
     }
     
-	public void configureDriverPath() throws IOException {
+    public static void setHeadless(String headless){
+    		HEADLESS = headless;
+    } 
+    
+	public static void configureDriverPath() throws IOException {
 		if(DEFAULT_OS.startsWith("Linux")) {
 			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/geckodriver";
 			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);

@@ -16,6 +16,7 @@ import com.framework.webelements.HtmlElement;
 import com.framework.webelements.LabelElement;
 import com.framework.webelements.TextFieldElement;
 import com.framework.webelements.webBasePage;
+import com.test.testdatatypes.LoginPOJO;
 
 public class idvAccountVerifyPage extends webBasePage {
 	
@@ -79,6 +80,14 @@ public class idvAccountVerifyPage extends webBasePage {
 	public void submitAccountKeyDetails(String accountkey) {
 		
 		this.accountKey=accountkey;		
+		MasterHelper.waitForElementToBeVisible(xpasscode);
+		populategetXPassChar();
+		populategetYPassChar();
+		MasterHelper.clickElement(loginButton.getElement());
+	}
+	
+	public void submitAccountKeyDetails(LoginPOJO login) {
+		this.accountKey=login.getAccountkey();		
 		MasterHelper.waitForElementToBeVisible(xpasscode);
 		populategetXPassChar();
 		populategetYPassChar();

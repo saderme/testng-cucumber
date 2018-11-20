@@ -93,7 +93,9 @@ public class DriverFactory {
 				DesiredCapabilities caps = DesiredCapabilities.chrome();
 				caps.setPlatform(Platform.ANY);
 				ChromeOptions options = new ChromeOptions();
-				 options.addArguments("--headless");
+				if (GlobalConfig.HEADLESS.equalsIgnoreCase("true")){
+				  options.addArguments("--headless");
+				}
 				options.addArguments("--disable-gpu");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
@@ -123,7 +125,9 @@ public class DriverFactory {
 				DesiredCapabilities caps = DesiredCapabilities.chrome();
 				caps.setPlatform(Platform.ANY);
 				ChromeOptions options = new ChromeOptions();
-				// options.addArguments("--headless");
+				if (GlobalConfig.HEADLESS.equalsIgnoreCase("true")){
+					  options.addArguments("--headless");
+					}
 				options.addArguments("--disable-gpu");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");

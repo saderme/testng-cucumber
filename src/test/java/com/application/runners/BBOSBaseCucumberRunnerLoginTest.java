@@ -36,6 +36,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -63,8 +64,6 @@ public class BBOSBaseCucumberRunnerLoginTest extends AbstractTestNGCucumberTests
 		long threadId = Thread.currentThread().getId();
 		start = new Date();
 		TestLogger.logAppLogInfo(applog, "@BeforeSuite  BaseCucumberLoginTest - Thread: " + threadId + " Test Suite Started: " + start.getTime());
-		gc.configureDriverPath();
-
 	}
 
 	public void explicitWait(WebElement element) {
@@ -92,16 +91,20 @@ public class BBOSBaseCucumberRunnerLoginTest extends AbstractTestNGCucumberTests
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	public void before() {
+	@Parameters({"headless" , "softassert"})
+	public void before(String headless, String softassert) throws Exception {
 		long threadId = Thread.currentThread().getId();
 		TestLogger.logAppLogInfo(applog, "@BeforeMethod  BaseCucumberLoginTest - Thread: " + threadId);
 		String processName = ManagementFactory.getRuntimeMXBean().getName();
 		System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
+		GlobalConfig.configureDriverPath();
+		GlobalConfig.setHeadless(headless);
+		GlobalConfig.setSoftAssert(softassert);
+	
 		driver = DriverFactory.getInstance().getDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConfig.DEFAULT_IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(Long.valueOf(GlobalConfig.PAGE_LOAD_TIMEOUT).longValue(),
-				TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Long.valueOf(GlobalConfig.PAGE_LOAD_TIMEOUT).longValue(),TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get(GlobalConfig.APP_URL);
 		mhelper = new MasterHelper(driver);
