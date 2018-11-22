@@ -1,0 +1,48 @@
+{
+	"organisation": [
+		{
+			"company": {
+				"companyno": "800020029",
+				"companyname": "CR SIT BFXC011",
+				"companyemail": "",
+				"companyphone": "",
+				"companyfax": "",
+				"addresstypecode": "21",
+				"addresstype": "OFFICIAL",
+				"addressline1": "WELCOME TO BARCLAYCARD",
+				"addressline2": "BARCLAYCARD HOUSE",
+				"addressline3": "MASSEY ROAD",
+				"addressline4": "THORNABY",
+				"addressline5": "",
+				"addressline6": "",
+				"city": "THORNABY",				
+				"postcode": "TS17 6YG",
+				"statecode": "15",	
+				"state": "Cambridgeshire",		
+				"countrycode": "76",					
+				"country": "UNITED KINGDOM",
+				"organisationtypecode": "4",				
+				"organisationtype": "UK BANKS",		
+				"organisationname": "CR SIT BFXC04",	
+				"orgnameusagecode": "10",
+				"orgnameusage": "REGISTERED NAME",	
+				"secondaryname": "",
+				"secondarynametype": "",
+				"legalentitytype": "",		
+				"languagecode": "",			
+				"statementlanguage": "",
+				"riskcategory": "",	
+				"riskname": "",
+				"mcc": "",	
+				"dmcc": "",	
+				"dcccommperc": "",	
+				"dccrevenueperc": "",																																						
+				"residencecode": "",
+				"residencenumber": "",					
+				"addressusedfor": [{"usedfor": "Paper statement delivery"},{"usedfor": "Card delivery"},{"usedfor": "Correspondence"}]
+			},
+			"authSig": [{"customerid": "66599020"}],
+			"cardholders": [{"customerid": "66599020","customerid": "000071060","customerid": "000071062",	"customerid": "000071063"}]
+		}
+	]
+}

@@ -1,0 +1,113 @@
+[
+	{
+		"login": {
+			"username": "66599020",
+			"password": "P@ssw0rd1234",
+			"accountkey": "password1234"
+		},
+		"organisation": {
+			"company": {
+				"companyno": "66599020",
+				"companyname": "CR SIT BFXC011",
+				"companyemail": "",
+				"companyphone": "",
+				"companyfax": "",
+				"companyaddress": {
+					"addresstypecode": "21",
+					"addresstype": "OFFICIAL",
+					"addressline1": "WELCOME TO BARCLAYCARD",
+					"addressline2": "BARCLAYCARD HOUSE",
+					"addressline3": "MASSEY ROAD",
+					"addressline4": "THORNABY",
+					"addressline5": "TS17 6YG",
+					"addressline6": "UNITED KINGDOM"
+				},
+				"addressusedfor": {
+					"usedforline1": "Paper statement delivery",
+					"usedforline2": "Card delivery",
+					"usedforline3": "Correspondence"
+				}
+			},
+
+			"authSig": {
+				"userid1": "66599020"
+			},
+			"cardholders": {
+				"userid1": "66599020",
+				"userid2": "000071060",
+				"userid3": "000071062",
+				"userid4": "000071063"
+			}
+		},
+		"person": {
+			"persondetails": {
+				"userid1": "000071060",
+				"accountid": "00101637783",
+				"title": "",
+				"firstname": "",
+				"middlename": "",
+				"lastname": "",
+				"gender": "",
+				"dob": "",
+				"nationality": "",
+				"securitypassword": "",
+				"employeeno": "",
+				"creditlimit": "",
+				"useraddress": {
+					"addressline1": "",
+					"addressline2": "",
+					"addressline3": "",
+					"city": "",
+					"county": "",
+					"country": "",
+					"postcode": ""
+				},
+				"mobileno": "",
+				"telhome": "",
+				"telbus": "",
+				"email": "",
+				"cardpinhomedelivery": "false",
+				"usercontrols": {
+					"suspendcard": "No",
+					"restrictUK": "No",
+					"preventcashwithdrawals": "No",
+					"preventinternettran": "No",
+					"drivingpurchasesonly": "No",
+					"bustransactionsonly": "No"
+				}
+			}
+		},
+		
+		"account": {
+			"clientstatus": "ACTIVE",
+			"accountnumber": "5476761037617397",
+			"accountid": "00101637783",
+			"userid1": "000071060",
+			"balances": {
+				"creditlimit": "5000",
+				"currentbalance": "0",
+				"availabletospend": "5000",
+				"pendingtransactions": "0"
+			},
+			"transactions": {
+
+				        "recent": [
+          				  	{"date": "",	"accountname": "","accountending": "","description": "","amount": ""},
+          				  	{"date": "",	"accountname": "","accountending": "","description": "","amount": ""},
+           				 	{"date": "",	"accountname": "","accountending": "","description": "","amount": ""}
+       					 ],
+				        "pending": [
+          				  	{"date": "",	"accountname": "","accountending": "","description": "","category": "","amount": ""},
+          				  	{"date": "",	"accountname": "","accountending": "","description": "","category": "","amount": ""},
+           				 	{"date": "",	"accountname": "","accountending": "","description": "","category": "","amount": ""}
+       					 ],
+        				"declined": [
+          				  	{"date": "",	"accountname": "","accountending": "","declinedreason": "","description": "","category": "","amount": ""},
+          				  	{"date": "",	"accountname": "","accountending": "","declinedreason": "","description": "","category": "","amount": ""},
+           				 	{"date": "",	"accountname": "","accountending": "","declinedreason": "","description": "","category": "","amount": ""}
+       					 ]
+
+			}
+		}
+	}
+]

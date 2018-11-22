@@ -1,0 +1,69 @@
+{
+	"account": {
+		"clientstatus": "ACTIVE",
+		"accountnumber": "5476761037617397",
+		"accountid": "00101637783",
+		"balances": {
+			"creditlimit": "5000",
+			"currentbalance": "0",
+			"availabletospend": "5000",
+			"pendingtransactions": "0"
+		},
+		"transactions": {
+			"recent": [
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"description": "",
+					"amount": ""
+				},
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"description": "",
+					"amount": ""
+				}
+			],
+			"pending": [
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"description": "",
+					"category": "",
+					"amount": ""
+				},
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"description": "",
+					"category": "",
+					"amount": ""
+				}
+			],
+			"declined": [
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"declinedreason": "",
+					"description": "",
+					"category": "",
+					"amount": ""
+				},
+				{
+					"date": "",
+					"accountname": "",
+					"accountending": "",
+					"declinedreason": "",
+					"description": "",
+					"category": "",
+					"amount": ""
+				}
+			]
+		}
+	}
+}
