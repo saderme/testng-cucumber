@@ -1,7 +1,6 @@
 package com.application.runners;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.text.DateFormat;
@@ -11,29 +10,24 @@ import java.util.GregorianCalendar;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import com.framework.core.GlobalConfig;
-import com.framework.core.TestLogger;
-import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
-import com.google.common.io.Files;
-
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
+import com.framework.core.GlobalConfig;
+import com.framework.core.TestLogger;
+import com.framework.utilities.DriverFactory;
+import com.google.common.io.Files;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -52,15 +46,14 @@ public class BaseCucumberTestNGRunner extends AbstractTestNGCucumberTests {
 	public static Properties config = null;
 	public static WebDriver driver = null;
 	public GlobalConfig gc;
-	protected MasterHelper mhelper;
+
 	private static final Logger applog = TestLogger.getLogger(BaseCucumberTestNGRunner.class);
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Exception {
 		System.out.println("@BeforeSuite - BaseCucumberTestNGRunner");
-	
 		gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//bbosconfig.properties");
-		gc.configureDriverPath();
+
 	}
 
 	public void explicitWait(WebElement element) {
@@ -99,7 +92,7 @@ public class BaseCucumberTestNGRunner extends AbstractTestNGCucumberTests {
 				TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get(GlobalConfig.APP_URL);
-		mhelper = new MasterHelper(driver);
+
 	}
 	
 	@AfterMethod(alwaysRun = true)

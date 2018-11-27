@@ -51,7 +51,6 @@ public class CucumberRunLogin extends AbstractTestNGCucumberTests {
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Exception {
 		gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//config.properties");
-		gc.configureDriverPath();
 		driver = DriverFactory.getInstance().getDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConfig.DEFAULT_IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);

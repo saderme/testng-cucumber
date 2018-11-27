@@ -73,27 +73,5 @@ public class GlobalConfig {
     public static void setHeadless(String headless){
     		HEADLESS = headless;
     } 
-    
-	public static void configureDriverPath() throws IOException {
-		if(DEFAULT_OS.startsWith("Linux")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/geckodriver";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/chromedriver";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		}
-		if(DEFAULT_OS.startsWith("Mac")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/geckodriver";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/chromedriver";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		}
-		if(DEFAULT_OS.startsWith("Windows")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "//src//test//resources//drivers//windows//geckodriver.exe";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "//src//test//resources//drivers//windows//chromedriver.exe";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		}
-	}
-
-     
+ 
 }

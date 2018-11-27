@@ -1,15 +1,14 @@
-package stepdefinition;
+package com.application.stepdefinitions;
 
 import static org.testng.Assert.assertTrue;
 
 import com.application.pages.idvAccountVerifyPage;
 import com.application.pages.idvLoginPage;
 import com.application.runners.BBOSBaseCucumberRunnerLoginTest;
-import com.application.runners.BaseCucumberTestNGRunner;
 import com.framework.core.GlobalConfig;
 import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
 import com.framework.utilities.JsonDataReader;
+import com.framework.utilities.WaitHelper;
 import com.test.testdatatypes.LoginPOJO;
 
 import cucumber.api.java.en.And;
@@ -33,14 +32,14 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		MasterHelper.waitForElement(loginPage.getWEuserid(), GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT);
+		WaitHelper.waitForElement(loginPage.getWEuserid(), GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT);
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 	}
 
 	@When("^I login using \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_login_using_and(String username, String password) throws Exception {
 
-		MasterHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
+		WaitHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
 		loginPage.login(username, password);
 	}
 
@@ -56,7 +55,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		MasterHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
+		WaitHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
 		loginPage.login(loginpojo.getUsername(), loginpojo.getPassword());
 
 		try {
@@ -65,7 +64,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		MasterHelper.waitForElementPresent(avPage.getXpassCode().getBy());
+		WaitHelper.waitForElementPresent(avPage.getXpassCode().getBy());
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 		avPage.submitAccountKeyDetails(loginpojo.getAccountkey());
 		assertTrue(driver.getTitle().contains("Account Summary"));
@@ -81,7 +80,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		MasterHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
+		WaitHelper.waitForElementPresent(loginPage.getHTuserid().getBy());
 		loginPage.login(username, password);
 
 		try {
@@ -90,7 +89,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		MasterHelper.waitForElementPresent(avPage.getXpassCode().getBy());
+		WaitHelper.waitForElementPresent(avPage.getXpassCode().getBy());
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 		avPage.submitAccountKeyDetails(accountkey);
 		assertTrue(driver.getTitle().contains("Account Summary"));
@@ -99,7 +98,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 	@And("^I reach the BBOS verify account key screen$")
 	public void i_am_on_the_BBOS_verify_account_screen() throws Exception {
 		avPage = new idvAccountVerifyPage();
-		MasterHelper.waitForElementPresent(avPage.getXpassCode().getBy());
+		WaitHelper.waitForElementPresent(avPage.getXpassCode().getBy());
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 	}
 

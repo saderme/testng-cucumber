@@ -24,7 +24,9 @@ import org.openqa.selenium.WebElement;
 
 import com.framework.core.TestLogger;
 import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
+import com.framework.utilities.JavaScriptHelper;
+import com.framework.utilities.WaitHelper;
+import com.framework.utilities.WebUIHelper;
 
 /**
  * Provides methods to interact with a web page. All HTML element (ButtonElement, LinkElement, TextFieldElement, etc.)
@@ -107,23 +109,23 @@ public class HtmlElement {
      * </pre>
      */
     public void clickAt(final String value) {
-    	MasterHelper.clickAt(this.by, value);
+    	WebUIHelper.clickAt(this.by, value);
     }
 
     public void clickSpecificValuefromDropDown(WebElement dropdown, final By findby, String selectValue) {
-    	MasterHelper.clickSpecificValuefromDropDown(dropdown, findby, selectValue);
+    	WebUIHelper.clickSpecificValuefromDropDown(dropdown, findby, selectValue);
     }
     
     public void clickSpecificDatefromCalendar(WebElement calendar, final By findby, String selectValue) {
-    	MasterHelper.clickSpecificDatefromCalendar(calendar, findby, selectValue);
+    	WebUIHelper.clickSpecificDatefromCalendar(calendar, findby, selectValue);
     }  
     
     public void simulateClick() {
-    	MasterHelper.simulateClick(this.by);
+    	JavaScriptHelper.simulateClick(this.by);
     }
 
     public void simulateMoveToElement(final int x, final int y) {
-    	MasterHelper.simulateMoveToElement(this.by, x, y);
+    	JavaScriptHelper.simulateMoveToElement(this.by, x, y);
     }
 
     /**
@@ -132,21 +134,21 @@ public class HtmlElement {
      * waitForPresent to use Explicit Waits to deal with special element which needs long time to present.
      */
     protected void findElement() {
-        element = MasterHelper.getElement(this.by);
+        element = WebUIHelper.getElement(this.by);
     }
 
     /**
      * Get all elements in the current page with same locator.
      */
     public List<WebElement> getAllElements() {
-    	return MasterHelper.getAllElements(this.by);
+    	return WebUIHelper.getAllElements(this.by);
     }
 
     /**
      * Gets an attribute (using standard key-value pair) from the underlying attribute.
      */
     public String getAttribute(final String name) {
-    	return MasterHelper.getAttribute(this.by,name );
+    	return WebUIHelper.getAttribute(this.by,name );
     }
 
     /**
@@ -162,7 +164,7 @@ public class HtmlElement {
      * @param   propertyName
      */
     public String getCssValue(final String propertyName) {
-    	return MasterHelper.getCssValue(this.by,propertyName );
+    	return WebUIHelper.getCssValue(this.by,propertyName );
     }
 
     /**
@@ -176,21 +178,21 @@ public class HtmlElement {
      * Returns the underlying WebDriver WebElement.
      */
     public WebElement getElement() {
-    	return MasterHelper.getElement(this.by);
+    	return WebUIHelper.getElement(this.by);
     }
 
     /**
      * Executes the given JavaScript against the underlying WebElement.
      */
     public String getEval(final String script) {
-    	return MasterHelper.getEval(this.by, script);
+    	return JavaScriptHelper.getEval(this.by, script);
     }
 
     /**
      * Returns the 'height' property of the underlying WebElement's Dimension.
      */
     public int getHeight() {
-    	return MasterHelper.getHeight(this.by);
+    	return WebUIHelper.getHeight(this.by);
     }
 
     /**
@@ -204,7 +206,7 @@ public class HtmlElement {
      * Gets the Point location of the underlying WebElement.
      */
     public Point getLocation() {
-    	return MasterHelper.getLocation(this.by);
+    	return WebUIHelper.getLocation(this.by);
     }
 
     /**
@@ -249,35 +251,35 @@ public class HtmlElement {
      * Returns the Dimension property of the underlying WebElement.
      */
     public Dimension getSize() {
-    	return MasterHelper.getSize(this.by);
+    	return WebUIHelper.getSize(this.by);
     }
 
     /**
      * Returns the HTML Tag for the underlying WebElement (div, a, input, etc).
      */
     public String getTagName() {
-    	return MasterHelper.getTagName(this.by);
+    	return WebUIHelper.getTagName(this.by);
     }
 
     /**
      * Returns the text body of the underlying WebElement.
      */
     public String getText() {
-    	return MasterHelper.getText(this.by);
+    	return WebUIHelper.getText(this.by);
     }
 
     /**
      * Returns the 'value' attribute of the underlying WebElement.
      */
     public String getValue() {
-    	return MasterHelper.getValue(this.by);
+    	return WebUIHelper.getValue(this.by);
     }
 
     /**
      * Returns the 'width' property of the underlying WebElement's Dimension.
      */
     public int getWidth() {
-    	return MasterHelper.getWidth(this.by);
+    	return WebUIHelper.getWidth(this.by);
     }
 
     /**
@@ -293,7 +295,7 @@ public class HtmlElement {
      * Indicates whether or not the web element is currently displayed in the browser.
      */
     public boolean isDisplayed() {
-    	return MasterHelper.isDisplayed(this.by);
+    	return WebUIHelper.isDisplayed(this.by);
     }
 
     /**
@@ -301,62 +303,62 @@ public class HtmlElement {
      * used to look for hidden objects, whereas isDisplayed() only looks for things that are visible to the user
      */
     public boolean isElementPresent() {
-    	return MasterHelper.isElementPresent(this.by);
+    	return WebUIHelper.isElementPresent(this.by);
      }
 
     /**
      * Indicates whether or not the element is enabled in the browser.
      */
     public boolean isEnabled() {
-    	return MasterHelper.isEnabled(this.by);
+    	return WebUIHelper.isEnabled(this.by);
     }
     /**
      * Indicates whether or not the element is selected in the browser.
      */
     public boolean isSelected() {
-    	return MasterHelper.isSelected(this.by);
+    	return WebUIHelper.isSelected(this.by);
     }
 
     /**
      * Whether or not the indicated text is contained in the element's getText() attribute.
      */
     public boolean isTextPresent(final String text) {
-    	return MasterHelper.isTextPresent(this.by, text);
+    	return WebUIHelper.isTextPresent(this.by, text);
     }
 
     /**
      * Forces a mouseDown event on the WebElement.
      */
     public void mouseDown() { 
-    	MasterHelper.mouseDown(this.by);
+    	WebUIHelper.mouseDown(this.by);
     }
 
     /**
      * Forces a mouseOver event on the WebElement.
      */
     public void mouseOver() {
-    	MasterHelper.mouseOver(this.by);
+    	WebUIHelper.mouseOver(this.by);
     }
 
     /**
      * Forces a mouseOver event on the WebElement using simulate by JavaScript way for some dynamic menu.
      */
     public void simulateMouseOver() {
-    	MasterHelper.simulateMouseOver(this.by);
+    	JavaScriptHelper.simulateMouseOver(this.by);
     }
 
     /**
      * Forces a mouseUp event on the WebElement.
      */
     public void mouseUp() {
-    	MasterHelper.mouseUp(this.by);
+    	WebUIHelper.mouseUp(this.by);
     }
 
     /**
      * Sends the indicated CharSequence to the WebElement.
      */
     public void sendKeys(final CharSequence... arg) {
-    	MasterHelper.sendKeys(this.by, arg);
+    	WebUIHelper.sendKeys(this.by, arg);
     }
 
     /**
@@ -379,6 +381,6 @@ public class HtmlElement {
      * Wait element to present using Explicit Waits with default EXPLICIT_WAIT_TIME_OUT = 15 seconds.
      */
     public void waitForPresent() {
-    	MasterHelper.waitForPresent(this.by);
+    	WaitHelper.waitForPresent(this.by);
     }
 }

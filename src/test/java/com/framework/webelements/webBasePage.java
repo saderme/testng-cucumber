@@ -1,29 +1,19 @@
 package com.framework.webelements;
 
-import java.util.Set;
-
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidSelectorException;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.UnsupportedCommandException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.UnreachableBrowserException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-import com.framework.core.GlobalConfig;
 //import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.framework.core.TestLogger;
 import com.framework.customexception.CustomSeleniumTestsException;
-import com.framework.customexception.NotCurrentPageException;
 import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
+import com.framework.utilities.JavaScriptHelper;
+import com.framework.utilities.WebUIHelper;
 
 /**
  * Base html page abstraction. Used by webPageObject and WebPageSection
@@ -65,7 +55,7 @@ public abstract class webBasePage {
 	
 	private String getBodyText() {
 		if (bodyText == null) {
-			bodyText = MasterHelper.getBodyText();
+			bodyText = WebUIHelper.getBodyText();
 		}
 		return bodyText;
 	}
@@ -91,26 +81,26 @@ public abstract class webBasePage {
 	}	
 	
 	public final void selectFrame(final int index) {
-		MasterHelper.selectFrame(index);
+		WebUIHelper.selectFrame(index);
 		frameFlag = true;
 	}
 
 	public final void selectFrame(final By by) {
-		MasterHelper.selectFrame(by);
+		WebUIHelper.selectFrame(by);
 		frameFlag = true;
 	}
 
 	public final void selectFrame(final String locator) {
-		MasterHelper.selectFrame(locator);
+		WebUIHelper.selectFrame(locator);
 		frameFlag = true;
 	}	
 	public final void goBack() {
-		MasterHelper.goBack();
+		WebUIHelper.goBack();
 		frameFlag = false;
 	}
 
 	public final void goForward() {
-		MasterHelper.goForward();
+		WebUIHelper.goForward();
 		frameFlag = false;
 	}
 	
@@ -127,7 +117,6 @@ public abstract class webBasePage {
 	}
 	
 	private void open(final String url) throws Exception {
-
 		if (this.getDriver() == null) {
 			TestLogger.logRepInfo("Launch application");
 			driver = DriverFactory.getInstance().getDriver("chrome");
@@ -142,12 +131,12 @@ public abstract class webBasePage {
 			// handle if the last window is closed
 			TestLogger.logRepInfo("Launch application");
 			driver = DriverFactory.getInstance().getDriver("chrome");
-			MasterHelper.maximizeWindow();
+			JavaScriptHelper.maximizeWindow();
 			driver.navigate().to(url);
 		} catch (final UnsupportedCommandException e) {
 			TestLogger.logRepInfo("get UnsupportedCommandException, retry");
 			driver = DriverFactory.getInstance().getDriver("chrome");
-			MasterHelper.maximizeWindow();
+			JavaScriptHelper.maximizeWindow();
 			driver.navigate().to(url);
 		} catch (final org.openqa.selenium.TimeoutException ex) {
 			TestLogger.logRepInfo("got time out when loading " + url + ", ignored");
@@ -166,10 +155,10 @@ public abstract class webBasePage {
 			setTitle(driver.getTitle());
 			htmlSource = driver.getPageSource();
 
-			try {bodyText =  MasterHelper.getBodyText();
+			try {bodyText =  WebUIHelper.getBodyText();
 			} catch (final StaleElementReferenceException ignore) {
 				TestLogger.logAppLogWarning(applog, "StaleElementReferenceException got in populateAndCapturePageSnapshot");
-				bodyText =  MasterHelper.getBodyText();
+				bodyText =  WebUIHelper.getBodyText();
 			}
 		} catch (final UnreachableBrowserException e) { // throw
 

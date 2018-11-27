@@ -1,7 +1,5 @@
 package com.application.runners;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.reflect.Method;
@@ -9,34 +7,28 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import com.framework.core.GlobalConfig;
-import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
-import com.google.common.io.Files;
-import com.framework.core.TestLogger;
-
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+
+import com.framework.core.GlobalConfig;
+import com.framework.core.TestLogger;
+import com.framework.utilities.DriverFactory;
+import com.framework.utilities.JavaScriptHelper;
+import com.framework.utilities.WaitHelper;
+import com.framework.utilities.WebUIHelper;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -53,12 +45,16 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 
 	public static Properties config = null;
 	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//bbosconfig.properties");
-	//protected WebDriver driver  = DriverFactory.getInstance().getDriver();
+
 	protected WebDriver driver;
-	protected MasterHelper mhelper;
+	public WaitHelper wHelper;
+	public JavaScriptHelper jsHelper;
+	public WebUIHelper uiHelper;
+	
 	private static final Logger applog = TestLogger.getLogger(BBOSBaseCucumberRunnerPOJOLoginTest.class);
 	private Date start;
-
+	private Date end;
+	
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Exception {
 		long threadId = Thread.currentThread().getId();
@@ -94,10 +90,9 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 	@Parameters({"headless" , "softassert"})
 	public void before(String headless, String softassert) throws Exception {
 		long threadId = Thread.currentThread().getId();
-		TestLogger.logAppLogInfo(applog, "@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId);
 		String processName = ManagementFactory.getRuntimeMXBean().getName();
-		System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
-		GlobalConfig.configureDriverPath();
+		TestLogger.logAppLogInfo(applog, "@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + " Process: " + processName);
+
 		GlobalConfig.setHeadless(headless);
 		GlobalConfig.setSoftAssert(softassert);
 	
@@ -107,7 +102,6 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 		driver.manage().timeouts().pageLoadTimeout(Long.valueOf(GlobalConfig.PAGE_LOAD_TIMEOUT).longValue(),TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get(GlobalConfig.APP_URL);
-		mhelper = new MasterHelper(driver);
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -133,6 +127,7 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 	@AfterSuite(alwaysRun = true)
 	public void quit() throws IOException, InterruptedException {
 		long threadId = Thread.currentThread().getId();
-		TestLogger.logAppLogInfo(applog, "@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + "Test Suite Ended: " + start.getTime());
+		end = new Date();
+		TestLogger.logAppLogInfo(applog, "@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + "Test Suite Ended: " + end.getTime());
 	}
 }

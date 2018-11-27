@@ -1,4 +1,4 @@
-package stepdefinition;
+package com.application.stepdefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

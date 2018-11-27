@@ -3,21 +3,18 @@ package com.application.pages;
 import static com.framework.core.Locator.locateById;
 import static com.framework.core.Locator.locateByXPath;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import com.framework.core.GlobalConfig;
 import com.framework.utilities.DriverFactory;
+import com.framework.utilities.JavaScriptHelper;
 import com.framework.webelements.ButtonElement;
 import com.framework.webelements.HtmlElement;
-import com.framework.webelements.LabelElement;
 import com.framework.webelements.LinkElement;
 import com.framework.webelements.TextFieldElement;
 import com.framework.webelements.webBasePage;
 import com.test.testdatatypes.LoginPOJO;
-import com.framework.utilities.MasterHelper;
 public class idvLoginPage extends webBasePage {
 	
 	private WebDriver driver;
@@ -45,7 +42,7 @@ public class idvLoginPage extends webBasePage {
 		userid.sendKeys(userName);
 		password.sendKeys(pwd);
 		//Using JS to Click and not Selenium as the popup is preventing click
-		MasterHelper.clickElement(nextBtn.getElement());
+		JavaScriptHelper.clickElement(nextBtn.getElement());
 	}
 	
 	//This method gets data from the json login pojo that is passed through
@@ -53,7 +50,7 @@ public class idvLoginPage extends webBasePage {
 		userid.sendKeys(login.getUsername());
 		password.sendKeys(login.getPassword());
 		//Using JS to Click and not Selenium as the popup is preventing click
-		MasterHelper.clickElement(nextBtn.getElement());
+		JavaScriptHelper.clickElement(nextBtn.getElement());
 	}
 	
 	public  HtmlElement getHTuserid() {

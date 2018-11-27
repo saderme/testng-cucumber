@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.framework.utilities.DriverFactory;
-import com.framework.utilities.MasterHelper;
+import com.framework.utilities.JavaScriptHelper;
+import com.framework.utilities.WaitHelper;
 import com.framework.webelements.ButtonElement;
 import com.framework.webelements.HtmlElement;
 import com.framework.webelements.LabelElement;
@@ -80,18 +81,18 @@ public class idvAccountVerifyPage extends webBasePage {
 	public void submitAccountKeyDetails(String accountkey) {
 		
 		this.accountKey=accountkey;		
-		MasterHelper.waitForElementToBeVisible(xpasscode);
+		WaitHelper.waitForElementToBeVisible(xpasscode);
 		populategetXPassChar();
 		populategetYPassChar();
-		MasterHelper.clickElement(loginButton.getElement());
+		JavaScriptHelper.clickElement(loginButton.getElement());
 	}
 	
 	public void submitAccountKeyDetails(LoginPOJO login) {
 		this.accountKey=login.getAccountkey();		
-		MasterHelper.waitForElementToBeVisible(xpasscode);
+		WaitHelper.waitForElementToBeVisible(xpasscode);
 		populategetXPassChar();
 		populategetYPassChar();
-		MasterHelper.clickElement(loginButton.getElement());
+		JavaScriptHelper.clickElement(loginButton.getElement());
 	}
 	
 }
