@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testng Cucumber Extent Tests" verbose="2"  parallel="instances" thread-count="3">
+	<parameter name="headless" value="false" /> 
+	<parameter name="softassert" value="true" />  
+	
+  <test name="Run Login Tests with extent reports">
+  <classes>
+ 	 <class name="com.application.runners.CucumberExtentRunnerLoginTest"></class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->

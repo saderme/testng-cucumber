@@ -1,5 +1,6 @@
 package com.application.runners;
 
+import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.reflect.Method;
@@ -19,10 +20,12 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import com.cucumber.listener.Reporter;
 import com.framework.core.GlobalConfig;
 import com.framework.core.TestLogger;
 import com.framework.utilities.DriverFactory;
@@ -36,12 +39,12 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		strict = true, monochrome = true, 
 		features = "src/test/resources/features", 
-		glue = "com.application.stepdefinitions", plugin = {
-		"pretty", "html:target/cucumber-html-report-loginpojo" }, 
+		glue = "com.application.stepdefinitions", 
+		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-extent/report.html"},
 		tags = { "@Loginpojo2" }
 		)
 
-public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberTests {
+public class CucumberExtentRunnerLoginTest extends AbstractTestNGCucumberTests {
 
 	public static Properties config = null;
 	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//qaconfig.properties");
@@ -51,7 +54,7 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 	public JavaScriptHelper jsHelper;
 	public WebUIHelper uiHelper;
 	
-	private static final Logger applog = TestLogger.getLogger(BBOSBaseCucumberRunnerPOJOLoginTest.class);
+	private static final Logger applog = TestLogger.getLogger(CucumberExtentRunnerLoginTest.class);
 	private Date start;
 	private Date end;
 	
@@ -63,7 +66,13 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 		start = new Date();
 		TestLogger.logAppLogInfo(applog, "@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + " Test Suite Started: " + start.getTime());
 	}
-
+	
+	@BeforeClass
+/*	public static void setup() {
+	    ExtentProperties extentProperties = ExtentProperties.INSTANCE;
+	    extentProperties.setReportPath("target/cucumber-extent/report.html");
+	}*/
+	
 	@AfterClass(alwaysRun = true)
 	public void takeScreenshot() throws IOException {
 		long threadId = Thread.currentThread().getId();
@@ -75,6 +84,11 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 		trgtFile.createNewFile();
 		Files.copy(scrFile, trgtFile);*/
 	}
+	
+	 @AfterClass
+	 public static void writeExtentReport() {
+		 Reporter.loadXMLConfig(new File(GlobalConfig.EXTENT_CONFIG_PATH));
+	 }
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"headless" , "softassert"})

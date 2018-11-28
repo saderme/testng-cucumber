@@ -22,14 +22,4 @@ Scenario Outline: User can login to BBOS through ID&V
 	
 	Examples: 
 		| username | 
-		|66599020  |
-
-@Loginpojo2 
-Scenario Outline: User cannot login to BBOS through ID&V 
-	When I login using "<username>" credentials
-	Then I reach the BBOS summary screen
-	
-	Examples: 
-		| username | 
-		|99999999  |	
-   
+		|66599020  |   

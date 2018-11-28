@@ -20,3 +20,11 @@
 [1120/153102.053:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17152_16548\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
 [1120/153102.081:ERROR:file_io_win.cc(170)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir17152_16548\Crashpad\reports\07d458d6-fc70-4298-a80c-6f66d0045fe4.dmp: The system cannot find the path specified. (0x3)
 [1120/153102.081:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[1128/114858.527:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir4380_22255\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/114916.094:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir2752_11799\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/130315.583:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir1984_8450\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/130533.909:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15512_31394\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/130533.981:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15512_31394\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/130533.994:ERROR:file_io_win.cc(161)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir15512_31394\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1128/132002.409:ERROR:file_io_win.cc(170)] CreateFile C:\Users\IBM_AD~1\AppData\Local\Temp\scoped_dir936_8281\Crashpad\reports\d553eaf2-6141-4318-bfe3-48020d33b583.dmp: The system cannot find the path specified. (0x3)
+[1128/132002.417:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
