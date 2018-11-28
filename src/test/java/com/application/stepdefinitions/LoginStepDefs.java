@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import com.application.pages.idvAccountVerifyPage;
 import com.application.pages.idvLoginPage;
 import com.application.runners.BBOSBaseCucumberRunnerLoginTest;
+import com.application.runners.BBOSBaseCucumberRunnerPOJOLoginTest;
 import com.framework.core.GlobalConfig;
 import com.framework.utilities.DriverFactory;
 import com.framework.utilities.JsonDataReader;
@@ -16,7 +17,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
+public class LoginStepDefs extends BBOSBaseCucumberRunnerPOJOLoginTest {
 
 	private idvLoginPage loginPage;
 	private idvAccountVerifyPage avPage;
@@ -32,7 +33,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		WaitHelper.waitForElement(loginPage.getWEuserid(), GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT);
+		WaitHelper.waitForElement(loginPage.getWEuserid(), Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 	}
 
@@ -45,11 +46,11 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 
 	@When("^I login using \\\"(.*)\\\" credentials$")
 	public void login_using_username_credentials(String userid) {
-		LoginPOJO loginpojo = JsonDataReader.getLoginJsonReader().getLoginDataByUserId(userid);
+		LoginPOJO loginpojo = (LoginPOJO) JsonDataReader.getLoginJsonReader().getLoginDataByUserId(userid);
 		
-		driver.get(GlobalConfig.APP_URL);
-		driver.manage().window().maximize();
-		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
+		//driver.get(GlobalConfig.APP_URL);
+		//driver.manage().window().maximize();
+		//assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 		try {
 			loginPage = new idvLoginPage();
 		} catch (Exception e) {
@@ -72,7 +73,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerLoginTest {
 
 	@When("^I successfully login using \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_successfully_login_using_and(String username, String password, String accountkey) {
-		driver.get(GlobalConfig.APP_URL);
+		//driver.get(GlobalConfig.APP_URL);
 		driver.manage().window().maximize();
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 		try {

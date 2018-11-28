@@ -60,7 +60,7 @@ public class WaitHelper {
 		TestLogger.logRepInfo("page is loaded");
 	}
 
-	public static void waitForElement(WebElement element, int timeOutInSeconds) {
+	public static void waitForElement(WebElement element, long timeOutInSeconds) {
 		TestLogger.logRepInfo("waiting for :" + element.toString() + " for :" + timeOutInSeconds + " seconds");
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -70,7 +70,7 @@ public class WaitHelper {
 	public static void waitForPresent(final By by) {
 		TestLogger.logRepInfo("wait for " + by.toString() + " to present.");
 
-		final Wait<WebDriver> wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final Wait<WebDriver> wait = new WebDriverWait(driver,Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(new ExpectedCondition<WebElement>() {
 			public WebElement apply(final WebDriver driver) {
 				return driver.findElement(by);
@@ -81,7 +81,7 @@ public class WaitHelper {
 		Assert.assertNotNull(element, "Element can't be null");
 		TestLogger.logRepInfo("wait for " + element.toString() + " to disappear.");
 
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(element.getBy()));
 	}
 
@@ -101,7 +101,7 @@ public class WaitHelper {
 		Assert.assertNotNull(text, "Text can't be null");
 		TestLogger.logRepInfo("wait for text \"" + text + "\" to be present.");
 
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.textToBePresentInElement(element.getBy(), text));
 	}
 
@@ -111,7 +111,7 @@ public class WaitHelper {
 
 		boolean b = false;
 
-		for (int millisec = 0; millisec < (GlobalConfig.EXPLICIT_WAIT_TIME_OUT * 1000); millisec += 1000) {
+		for (int millisec = 0; millisec < (Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue() * 1000); millisec += 1000) {
 
 			try {
 
@@ -139,7 +139,7 @@ public class WaitHelper {
 
 		boolean textPresent = true;
 
-		for (int millisec = 0; millisec < (GlobalConfig.EXPLICIT_WAIT_TIME_OUT * 1000); millisec += 1000) {
+		for (int millisec = 0; millisec < (Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue() * 1000); millisec += 1000) {
 
 			try {
 
@@ -193,14 +193,14 @@ public class WaitHelper {
 		Assert.assertNotNull(element, "Element can't be null");
 		TestLogger.logRepInfo("wait for " + element.toString() + " to be checked.");
 
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.elementToBeSelected(element.getBy()));
 	}
 
 	public static void waitForElementEditable(final HtmlElement element) {
 		Assert.assertNotNull(element, "Element can't be null");
 		TestLogger.logRepInfo("wait for " + element.toString() + " to be editable.");
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.elementToBeClickable(element.getBy()));
 		
 	}
@@ -208,7 +208,7 @@ public class WaitHelper {
 	public static void waitForElementPresent(final By by) {
 		TestLogger.logRepInfo("wait for " + by.toString() + " to be present.");
 
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.presenceOfElementLocated(by));
 	}
 
@@ -223,7 +223,7 @@ public class WaitHelper {
 		Assert.assertNotNull(element, "Element can't be null");
 		TestLogger.logRepInfo("wait for " + element.toString() + " to be present.");
 
-		final WebDriverWait wait = new WebDriverWait(driver, GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(driver, Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.presenceOfElementLocated(element.getBy()));
 	}
 
@@ -231,7 +231,7 @@ public class WaitHelper {
 		Assert.assertNotNull(element, "Element can't be null");
 		TestLogger.logRepInfo("wait for " + element.toString() + " to be visible.");
 
-		final WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), GlobalConfig.EXPLICIT_WAIT_TIME_OUT);
+		final WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), Long.valueOf(GlobalConfig.DEFAULT_EXPLICIT_WAIT_TIME_OUT).longValue());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(element.getBy()));
 	}
 

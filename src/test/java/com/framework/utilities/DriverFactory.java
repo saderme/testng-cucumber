@@ -86,7 +86,7 @@ public class DriverFactory {
 				options.setExperimentalOption("useAutomationExtension", false);
 				driver = new ChromeDriver(options);
 				//WebDriverManager.chromedriver().setup();
-				ThreadDriver.set(new ChromeDriver(options));
+				ThreadDriver.set(driver);
 				break;
 			case "firefox":
 				//WebDriverManager.firefoxdriver().setup();
@@ -126,7 +126,7 @@ public class DriverFactory {
 				options.setExperimentalOption("useAutomationExtension", false);
 				//WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);
-				ThreadDriver.set(new ChromeDriver(options));
+				ThreadDriver.set(driver);
 				break;
 			case "firefox":
 				//WebDriverManager.firefoxdriver().setup();

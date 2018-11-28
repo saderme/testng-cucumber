@@ -36,17 +36,17 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		strict = true, monochrome = true, 
 		features = "src/test/resources/features", 
-		glue = "stepdefinition", plugin = {
+		glue = "com.application.stepdefinitions", plugin = {
 		"pretty", "html:target/cucumber-html-report-loginpojo" }, 
-		tags = { "@Loginpojo" }
+		tags = { "@Loginpojo2" }
 		)
 
 public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberTests {
 
 	public static Properties config = null;
-	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//bbosconfig.properties");
+	public GlobalConfig gc = new GlobalConfig(System.getProperty("user.dir") + "//src//test//resources//config//qaconfig.properties");
 
-	protected WebDriver driver;
+	public WebDriver driver;
 	public WaitHelper wHelper;
 	public JavaScriptHelper jsHelper;
 	public WebUIHelper uiHelper;
@@ -57,21 +57,11 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Exception {
+		//This property is passed by maven in the pom.xml
+		//System.out.println(System.getProperty("browserbymvn"));
 		long threadId = Thread.currentThread().getId();
 		start = new Date();
 		TestLogger.logAppLogInfo(applog, "@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + " Test Suite Started: " + start.getTime());
-	}
-
-	public void explicitWait(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 3000);
-		wait.until(ExpectedConditions.visibilityOf(element));
-	}
-
-	public static String currentDateTime() {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar cal = Calendar.getInstance();
-		String cal1 = dateFormat.format(cal.getTime());
-		return cal1;
 	}
 
 	@AfterClass(alwaysRun = true)
@@ -97,11 +87,15 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 		GlobalConfig.setSoftAssert(softassert);
 	
 		driver = DriverFactory.getInstance().getDriver();
+		wHelper = new WaitHelper(driver);
+		jsHelper = new JavaScriptHelper(driver);
+		uiHelper = new WebUIHelper(driver);
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(GlobalConfig.DEFAULT_IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(Long.valueOf(GlobalConfig.PAGE_LOAD_TIMEOUT).longValue(),TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		driver.get(GlobalConfig.APP_URL);
+		//driver.get(GlobalConfig.APP_URL);
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -129,5 +123,18 @@ public class BBOSBaseCucumberRunnerPOJOLoginTest extends AbstractTestNGCucumberT
 		long threadId = Thread.currentThread().getId();
 		end = new Date();
 		TestLogger.logAppLogInfo(applog, "@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: " + threadId + "Test Suite Ended: " + end.getTime());
+	}
+	
+
+	public void explicitWait(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public static String currentDateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Calendar cal = Calendar.getInstance();
+		String cal1 = dateFormat.format(cal.getTime());
+		return cal1;
 	}
 }

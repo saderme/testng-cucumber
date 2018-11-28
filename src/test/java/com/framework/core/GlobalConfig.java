@@ -16,7 +16,7 @@ public class GlobalConfig {
     public static String DEFAULT_PAGE_LOAD_TIMEOUT = "90";
     public static int WEB_SESSION_TIMEOUT = 30 * 1000;
     public static String IMPLICIT_WAIT_TIMEOUT;
-    public static long EXPLICIT_WAIT_TIME_OUT; 
+    public static String EXPLICIT_WAIT_TIME_OUT; 
     public static String DRIVER_BIN_PATH;   
     public static String LOG4J_PATH;   
     public static String DEFAULT_OS; 
@@ -39,20 +39,20 @@ public class GlobalConfig {
       	ConfigurationReader cr = new ConfigurationReader(configFile);
     	GlobalConfig.APP_URL = cr.getProperty("applicationUrl");
  		GlobalConfig.IMPLICIT_WAIT_TIMEOUT = cr.getProperty("implicitwait");
- 		GlobalConfig.EXPLICIT_WAIT_TIME_OUT =  Long.valueOf(cr.getProperty("explicitwait")).longValue();
+ 		GlobalConfig.EXPLICIT_WAIT_TIME_OUT =  cr.getProperty("explicitwait");
  		GlobalConfig.PAGE_LOAD_TIMEOUT = cr.getProperty("pageloadtime");
  		GlobalConfig.DEFAULT_OS = cr.getProperty("defaultOS");	
  		GlobalConfig.DEFAULT_BROWSER = cr.getProperty("browser");		
  		GlobalConfig.EXTENT_CONFIG_PATH = cr.getProperty("extentconfigpath");	
- 		GlobalConfig.DRIVER_BIN_PATH = cr.getProperty("driverbinpath");
+ 		GlobalConfig.DRIVER_BIN_PATH = cr.getProperty("driverbinpathChrome");
  		GlobalConfig.LOG4J_PATH = cr.getProperty("log4jpath");
  		GlobalConfig.EXTENT_REPORT_PATH = cr.getProperty("extentreportpath");
   		GlobalConfig.EXTENT_REPORT_PATH_WIN = cr.getProperty("extentreportpathWin");
  		GlobalConfig.EXTENT_REPORT_PATH_MAC = cr.getProperty("extentreportpathMac");
  		GlobalConfig.EXTENT_REPORT_FILENAME = cr.getProperty("extentreportpathFileName");
- 		GlobalConfig.TEST_DATA_PATH = cr.getProperty("testdatapath");
+ 		//GlobalConfig.TEST_DATA_PATH = cr.getProperty("testdataPath");
  		GlobalConfig.SCREENSHOT_PATH = cr.getProperty("screenshotpath");
- 		GlobalConfig.TESTDATA_RESOURCE_PATH = cr.getProperty("testDataResourcePath");
+ 		GlobalConfig.TESTDATA_RESOURCE_PATH = cr.getProperty("testDataPath");
  	    
  		GlobalConfig.HEADLESS = "false";
     }

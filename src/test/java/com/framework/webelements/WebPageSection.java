@@ -16,7 +16,8 @@ package com.framework.webelements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.framework.utilities.MasterHelper;
+import com.framework.utilities.WebUIHelper;
+
 
 //import com.simplewebframework.helpers.ScreenshotUtil;
 
@@ -61,6 +62,6 @@ public abstract class WebPageSection extends webBasePage {
     }
 
     public boolean isPageSectionPresent() {
-        return MasterHelper.isElementPresent(by);
+        return WebUIHelper.isElementPresent(by);
     }
 }

@@ -15,13 +15,21 @@ Scenario Outline: User login to BBOS through ID&V
 		| username | password   | accountkey  |
 		|66599020  |P@ssw0rd1234|password1234 |
 
-@Loginpojo 
-Scenario Outline: User cannot login to BBOS through ID&V 
+@Loginpojo2 
+Scenario Outline: User can login to BBOS through ID&V 
 	When I login using "<username>" credentials
 	Then I reach the BBOS summary screen
 	
 	Examples: 
 		| username | 
 		|66599020  |
+
+@Loginpojo2 
+Scenario Outline: User cannot login to BBOS through ID&V 
+	When I login using "<username>" credentials
+	Then I reach the BBOS summary screen
 	
+	Examples: 
+		| username | 
+		|99999999  |	
    

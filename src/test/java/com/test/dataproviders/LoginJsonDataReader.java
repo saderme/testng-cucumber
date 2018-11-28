@@ -11,7 +11,7 @@ import com.test.testdatatypes.LoginPOJO;
 import com.framework.core.GlobalConfig;
 
 public class LoginJsonDataReader {
-private final String loginFilePath = GlobalConfig.TESTDATA_RESOURCE_PATH + "Login.json";
+private final String loginFilePath = GlobalConfig.TESTDATA_RESOURCE_PATH + "login.json";
 private List<LoginPOJO> loginList;
 
 public LoginJsonDataReader(){
