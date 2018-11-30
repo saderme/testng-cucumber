@@ -34,13 +34,7 @@ public class DriverFactory {
 		return new ChromeDriver();
     }
   
-
-    public void removeDriver() // Quits the driver and closes the browser
-    {
-    	ThreadDriver.get().quit();
-    	ThreadDriver.remove();
-    }
-    
+   
 	public static void configureDriverPath() throws IOException {
 		if(GlobalConfig.DEFAULT_OS.startsWith("Linux")) {
 			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/geckodriver";
@@ -149,5 +143,10 @@ public class DriverFactory {
 		}
 	}
 
+    public void removeDriver() // Quits the driver and closes the browser
+    {
+    	ThreadDriver.get().quit();
+    	ThreadDriver.remove();
+    }
 
 }

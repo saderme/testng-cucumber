@@ -47,7 +47,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerPOJOLoginTest {
 	@When("^I login using \\\"(.*)\\\" credentials$")
 	public void login_using_username_credentials(String userid) {
 		LoginPOJO loginpojo = (LoginPOJO) JsonDataReader.getLoginJsonReader().getLoginDataByUserId(userid);
-		
+		driver = DriverFactory.getInstance().getDriver();
 		//driver.get(GlobalConfig.APP_URL);
 		//driver.manage().window().maximize();
 		//assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
@@ -74,6 +74,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerPOJOLoginTest {
 	@When("^I successfully login using \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_successfully_login_using_and(String username, String password, String accountkey) {
 		//driver.get(GlobalConfig.APP_URL);
+		driver = DriverFactory.getInstance().getDriver();
 		driver.manage().window().maximize();
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));
 		try {
@@ -98,6 +99,7 @@ public class LoginStepDefs extends BBOSBaseCucumberRunnerPOJOLoginTest {
 
 	@And("^I reach the BBOS verify account key screen$")
 	public void i_am_on_the_BBOS_verify_account_screen() throws Exception {
+		driver = DriverFactory.getInstance().getDriver();
 		avPage = new idvAccountVerifyPage();
 		WaitHelper.waitForElementPresent(avPage.getXpassCode().getBy());
 		assertTrue(driver.getTitle().contains("GCP-ID&V Login"));

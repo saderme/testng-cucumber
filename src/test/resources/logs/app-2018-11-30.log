@@ -1,0 +1,661 @@
+09:47:10.827 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543571230827
+09:47:11.203 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:47:11.312 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 6176@IBM651-PC0BY5PB
+09:47:11.340 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+09:47:11.345 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:47:11.663 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543571231663
+09:48:32.892 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543571312892
+09:48:33.283 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:48:33.377 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 9408@IBM651-PC0BY5PB
+09:48:37.114 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:48:54.700 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+09:48:54.707 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+09:48:55.586 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:48:55.664 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.664 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+09:48:55.664 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+09:48:55.664 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+09:48:55.851 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.851 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+09:48:55.851 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+09:48:55.851 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+09:48:55.882 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.882 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+09:48:55.882 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+09:48:55.882 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+09:48:55.898 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.898 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+09:48:55.898 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+09:48:55.898 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+09:48:55.914 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.914 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+09:48:55.914 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+09:48:55.914 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+09:48:55.914 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.914 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+09:48:55.914 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+09:48:55.914 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+09:48:55.945 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.945 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+09:48:55.945 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+09:48:55.945 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+09:48:55.945 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.945 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+09:48:55.945 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+09:48:55.945 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+09:48:55.960 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.960 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+09:48:55.960 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+09:48:55.960 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+09:48:55.960 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.960 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+09:48:55.960 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+09:48:55.960 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+09:48:55.976 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:48:55.976 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+09:48:55.976 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+09:48:55.976 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+09:48:56.039 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543571336039
+09:53:20.869 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543571600852
+09:53:21.261 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:53:21.370 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 1416@IBM651-PC0BY5PB
+09:53:26.323 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:53:43.256 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+09:53:43.257 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:53:48.784 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+09:53:48.803 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+09:53:49.621 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:53:49.668 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.668 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+09:53:49.668 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+09:53:49.668 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+09:53:49.871 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.871 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+09:53:49.871 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+09:53:49.871 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+09:53:49.902 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.902 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+09:53:49.902 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+09:53:49.902 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+09:53:49.902 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.902 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+09:53:49.902 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+09:53:49.902 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+09:53:49.918 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.918 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+09:53:49.918 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+09:53:49.918 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+09:53:49.934 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.934 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+09:53:49.934 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+09:53:49.934 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+09:53:49.965 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.965 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+09:53:49.965 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+09:53:49.965 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+09:53:49.965 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.965 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+09:53:49.965 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+09:53:49.965 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+09:53:49.981 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.981 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+09:53:49.981 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+09:53:49.981 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+09:53:49.981 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.981 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+09:53:49.981 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+09:53:49.981 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+09:53:49.997 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:53:49.997 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+09:53:49.997 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+09:53:49.997 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+09:53:50.044 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543571630044
+09:59:05.760 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543571945744
+09:59:06.213 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:59:06.307 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 11048@IBM651-PC0BY5PB
+09:59:10.261 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:59:24.463 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+09:59:24.463 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:59:27.444 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+09:59:28.175 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+09:59:31.768 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+09:59:32.382 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+09:59:33.240 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+09:59:33.287 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.287 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+09:59:33.302 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+09:59:33.302 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+09:59:33.474 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.489 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+09:59:33.489 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+09:59:33.489 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+09:59:33.505 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.505 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+09:59:33.505 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+09:59:33.505 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+09:59:33.505 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.521 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+09:59:33.521 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+09:59:33.521 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+09:59:33.536 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.536 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+09:59:33.536 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+09:59:33.536 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+09:59:33.552 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.552 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+09:59:33.552 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+09:59:33.552 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+09:59:33.583 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.583 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+09:59:33.583 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+09:59:33.583 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+09:59:33.583 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.583 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+09:59:33.583 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+09:59:33.583 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+09:59:33.599 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.599 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+09:59:33.599 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+09:59:33.599 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+09:59:33.614 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.614 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+09:59:33.614 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+09:59:33.614 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+09:59:33.614 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+09:59:33.614 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+09:59:33.614 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+09:59:33.614 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+09:59:33.662 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543571973662
+10:01:21.192 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572081192
+10:01:21.567 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:01:21.676 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 13112@IBM651-PC0BY5PB
+10:01:25.197 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:01:41.084 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:01:41.085 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:01:59.131 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:01:59.848 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:02:03.585 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:02:04.325 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:02:09.504 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:02:10.172 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+10:02:11.218 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:02:11.265 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.265 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:02:11.265 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:02:11.265 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:02:11.468 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.468 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:02:11.468 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:02:11.468 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:02:11.499 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.499 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:02:11.499 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:02:11.499 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:02:11.499 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.499 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:02:11.499 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:02:11.499 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:02:11.530 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.530 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:02:11.530 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:02:11.530 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:02:11.546 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.546 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:02:11.546 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:02:11.546 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:02:11.577 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.577 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:02:11.577 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:02:11.577 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:02:11.577 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.577 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:02:11.577 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:02:11.577 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:02:11.593 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.593 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:02:11.593 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:02:11.593 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:02:11.593 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.593 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:02:11.593 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:02:11.593 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:02:11.608 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:02:11.608 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:02:11.608 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:02:11.608 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:02:11.672 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572131672
+10:04:33.204 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572273204
+10:04:33.595 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:04:33.689 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 13712@IBM651-PC0BY5PB
+10:04:37.410 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:04:51.321 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:04:51.321 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:04:54.372 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:04:54.373 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:04:56.819 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:04:56.822 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod - Thread: 13 SUCCESS
+10:04:57.652 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:04:57.699 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.699 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:04:57.699 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:04:57.699 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:04:57.886 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.886 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:04:57.886 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:04:57.886 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:04:57.902 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.902 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:04:57.917 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:04:57.917 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:04:57.917 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.917 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:04:57.917 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:04:57.917 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:04:57.933 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.933 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:04:57.933 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:04:57.933 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:04:57.949 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.949 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:04:57.949 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:04:57.949 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:04:57.980 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.980 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:04:57.980 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:04:57.980 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:04:57.980 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.980 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:04:57.980 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:04:57.980 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:04:57.995 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:04:57.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:04:57.995 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:04:57.995 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:57.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:04:57.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:04:57.995 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:04:58.011 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:04:58.011 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:04:58.011 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:04:58.011 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:04:58.074 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572298074
+10:11:37.113 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572697113
+10:11:37.489 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:11:37.598 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 10336@IBM651-PC0BY5PB
+10:11:40.647 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+10:11:41.460 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:11:41.665 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572701665
+10:12:41.775 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572761775
+10:14:14.401 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572854401
+10:14:14.745 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:14:14.885 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Method: feature FAIL
+10:14:14.885 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:14:15.121 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572855121
+10:15:39.031 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572939031
+10:15:39.360 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:15:39.485 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Method: feature FAIL
+10:15:39.500 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:15:39.735 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572939735
+10:15:55.321 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543572955305
+10:15:55.696 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:15:55.774 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 4292@IBM651-PC0BY5PB
+10:15:58.813 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:16:13.553 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:16:13.554 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:16:16.581 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:16:16.582 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:16:19.255 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:16:19.261 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod - Thread: 13 SUCCESS
+10:16:20.060 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:16:20.107 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.107 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:16:20.107 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:16:20.107 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:16:20.278 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.278 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:16:20.278 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:16:20.278 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:16:20.309 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.309 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:16:20.309 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:16:20.309 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:16:20.309 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.309 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:16:20.309 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:16:20.309 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:16:20.325 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.325 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:16:20.325 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:16:20.325 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:16:20.341 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.341 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:16:20.341 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:16:20.341 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:16:20.356 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.356 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:16:20.356 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:16:20.356 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:16:20.372 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.372 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:16:20.372 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:16:20.372 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:16:20.372 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.372 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:16:20.372 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:16:20.372 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:16:20.372 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.387 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:16:20.387 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:16:20.387 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:16:20.387 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:16:20.387 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:16:20.387 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:16:20.387 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:16:20.434 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543572980434
+10:21:44.149 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543573304143
+10:21:44.557 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:21:44.682 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 5888@IBM651-PC0BY5PB
+10:21:49.092 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:22:05.229 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:22:05.229 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:22:05.229 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:22:05.229 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:22:05.229 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:22:05.244 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+10:22:05.244 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:22:05.275 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.275 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:22:05.275 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:22:05.275 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:22:05.495 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.495 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:22:05.495 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:22:05.495 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:22:05.526 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.526 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:22:05.526 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:22:05.526 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:22:05.542 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.542 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:22:05.542 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:22:05.542 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:22:05.557 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.557 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:22:05.557 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:22:05.557 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:22:05.557 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.557 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:22:05.557 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:22:05.557 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:22:05.588 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.588 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:22:05.588 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:22:05.588 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:22:05.588 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.588 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:22:05.588 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:22:05.588 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:22:05.604 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.604 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:22:05.604 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:22:05.604 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:22:05.604 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.604 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:22:05.604 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:22:05.604 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:22:05.620 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:22:05.620 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:22:05.620 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:22:05.620 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:22:05.682 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543573325682
+10:23:37.448 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543573417448
+10:23:38.042 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:23:38.135 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 12732@IBM651-PC0BY5PB
+10:23:41.658 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:23:56.797 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:23:56.797 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:24:11.486 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:24:11.486 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:24:25.685 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:24:25.701 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+10:24:25.716 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:24:25.764 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:25.764 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:24:25.764 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:24:25.764 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:24:25.967 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:25.967 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:24:25.967 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:24:25.967 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:24:25.982 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:25.982 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:24:25.982 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:24:25.982 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:24:25.998 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:25.998 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:24:25.998 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:24:25.998 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:24:26.014 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.014 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:24:26.014 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:24:26.014 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:24:26.029 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.029 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:24:26.029 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:24:26.029 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:24:26.045 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.045 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:24:26.045 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:24:26.045 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:24:26.060 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.060 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:24:26.060 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:24:26.060 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:24:26.060 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.060 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:24:26.060 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:24:26.060 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:24:26.076 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.076 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:24:26.076 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:24:26.076 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:24:26.076 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:24:26.076 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:24:26.076 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:24:26.076 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:24:26.160 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543573466160
+10:25:27.847 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543573527831
+10:25:28.254 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:25:28.363 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Method: feature FAIL
+10:25:28.363 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1
+10:25:28.629 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543573528629
+10:26:16.133 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543573576133
+10:26:16.493 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:26:16.602 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 13760@IBM651-PC0BY5PB
+10:26:20.302 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:26:35.624 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:26:35.626 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:26:38.218 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:26:38.218 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:26:40.840 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:26:40.844 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod - Thread: 13 SUCCESS
+10:26:41.652 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:26:41.714 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.714 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:26:41.714 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:26:41.714 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:26:41.917 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.917 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:26:41.917 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:26:41.917 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:26:41.932 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.948 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:26:41.948 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:26:41.948 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:26:41.948 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.948 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:26:41.948 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:26:41.948 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:26:41.964 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.964 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:26:41.964 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:26:41.964 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:26:41.979 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.979 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:26:41.979 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:26:41.979 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:26:41.995 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:41.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:26:41.995 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:26:41.995 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:26:42.010 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:42.010 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:26:42.010 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:26:42.010 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:26:42.026 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:42.026 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:26:42.026 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:26:42.026 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:26:42.026 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:42.026 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:26:42.026 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:26:42.026 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:26:42.042 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:26:42.042 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:26:42.042 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:26:42.042 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:26:42.105 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543573602105
+10:38:05.119 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543574285102
+10:38:05.525 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:38:05.603 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 12804@IBM651-PC0BY5PB
+10:38:10.261 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:38:23.929 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:38:23.930 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:38:40.284 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:38:40.284 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:38:57.477 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status failed
+10:38:58.191 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13Method: feature FAIL
+10:38:58.972 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:38:59.026 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.035 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:38:59.037 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:38:59.038 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:38:59.260 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.261 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:38:59.261 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:38:59.261 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:38:59.288 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.288 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:38:59.289 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:38:59.289 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:38:59.299 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.299 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:38:59.300 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:38:59.300 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:38:59.317 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.318 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:38:59.319 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:38:59.319 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:38:59.331 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.332 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:38:59.332 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:38:59.333 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:38:59.360 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.361 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:38:59.361 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:38:59.362 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:38:59.372 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.373 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:38:59.373 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:38:59.374 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:38:59.381 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.381 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:38:59.382 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:38:59.382 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:38:59.393 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.393 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:38:59.394 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:38:59.394 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:38:59.407 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:38:59.408 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:38:59.409 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:38:59.409 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:38:59.617 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543574339617
+10:42:54.880 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543574574880
+10:42:55.288 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:42:55.412 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 12028@IBM651-PC0BY5PB
+10:42:59.887 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:43:13.652 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:43:13.653 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:43:16.304 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:43:16.305 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:43:18.806 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:43:18.808 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod - Thread: 13 SUCCESS
+10:43:19.600 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:43:19.678 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.678 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:43:19.678 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:43:19.678 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:43:19.912 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.912 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:43:19.912 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:43:19.912 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:43:19.944 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.944 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+10:43:19.944 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav.ftl"): Found
+10:43:19.944 DEBUG freemarker.cache -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+10:43:19.959 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.959 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+10:43:19.959 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+10:43:19.959 DEBUG freemarker.cache -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+10:43:19.975 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.975 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+10:43:19.975 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+10:43:19.975 DEBUG freemarker.cache -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+10:43:19.990 DEBUG freemarker.cache -Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:19.990 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+10:43:19.990 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+10:43:19.990 DEBUG freemarker.cache -Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+10:43:20.022 DEBUG freemarker.cache -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:20.022 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+10:43:20.022 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+10:43:20.022 DEBUG freemarker.cache -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+10:43:20.037 DEBUG freemarker.cache -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:20.037 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+10:43:20.037 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+10:43:20.037 DEBUG freemarker.cache -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+10:43:20.037 DEBUG freemarker.cache -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:20.053 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+10:43:20.053 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+10:43:20.053 DEBUG freemarker.cache -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+10:43:20.053 DEBUG freemarker.cache -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:20.053 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+10:43:20.053 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+10:43:20.053 DEBUG freemarker.cache -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+10:43:20.068 DEBUG freemarker.cache -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+10:43:20.068 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+10:43:20.068 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+10:43:20.068 DEBUG freemarker.cache -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+10:43:20.163 INFO  runners.CucumberExtentRunnerLoginTest -@AfterSuite   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1Test Suite Ended: 1543574600163
+10:45:04.940 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeSuite  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 1 Test Suite Started: 1543574704924
+10:45:05.315 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:45:05.425 INFO  runners.CucumberExtentRunnerLoginTest -@BeforeMethod  BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13 Process: 9368@IBM651-PC0BY5PB
+10:45:10.023 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:45:27.998 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:45:27.999 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:45:30.491 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:45:30.493 INFO  stepdefinitions.CucumberHooks -@Before Scenario User can login to BBOS through ID&V in thread: 13 Started
+10:45:32.783 INFO  stepdefinitions.CucumberHooks -@After Scenario User can login to BBOS through ID&V in thread: 13 with status passed
+10:45:32.786 INFO  runners.CucumberExtentRunnerLoginTest -@AfterMethod - Thread: 13 SUCCESS
+10:45:33.583 INFO  runners.CucumberExtentRunnerLoginTest -@AfterClass   BBOSBaseCucumberRunnerPOJOLoginTest - Thread: 13
+10:45:33.645 DEBUG freemarker.cache -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+10:45:33.645 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+10:45:33.645 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("index.ftl"): Found
+10:45:33.645 DEBUG freemarker.cache -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+10:45:33.910 DEBUG freemarker.cache -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+10:45:33.910 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+10:45:33.910 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("head.ftl"): Found
+10:45:33.910 DEBUG freemarker.cache -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/IBM_ADMIN/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+10:45:33.926 DEBUG freemarker.cache -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+10:45:33.926 DEBUG freemarker.cache -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found

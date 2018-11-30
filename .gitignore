@@ -10,3 +10,4 @@ screenshots/
 .project
 TestngCucumberBoilerPlate.iml
 .vscode
+.log
