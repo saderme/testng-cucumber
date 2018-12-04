@@ -18,6 +18,24 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
+	private static final String USER_DIR = "user.dir";
+	private static final String MAC_GECKO_PATH = "";
+	private static final String MAC_CHROME_PATH = "";
+	private static final String LINUX_GECKO_PATH = "";
+	private static final String LINUX_CHROME_PATH = "";
+	private static final String WIN_GECKO_PATH = "";
+	private static final String WIN_CHROME_PATH = "";
+	
+	private static final String GECKO_DRIVER = "webdriver.gecko.driver";
+	private static final String CHROME_DRIVER = "webdriver.chrome.driver";
+	
+	private static final String MAC = "Mac";
+	private static final String LINUX = "Linux";
+	private static final String WIN = "Win";
+
+	private static final String CHROME = "chrome";
+	private static final String FIREFOX = "firefox";
+	
 	private static DriverFactory instance = new DriverFactory();
 	private ThreadLocal<WebDriver> ThreadDriver = new ThreadLocal<WebDriver>();
 
@@ -29,119 +47,85 @@ public class DriverFactory {
 		return instance;
 	}
 
-    protected WebDriver initialValue()
-    {
+    protected WebDriver initialValue()  {
 		return new ChromeDriver();
     }
-  
+
+    public WebDriver getDriver()  {
+		return getDriver("");
+    }
    
+	public WebDriver getDriver(String browser) {
+		
+		if (ThreadDriver.get() == null) setDriverWith(browser);
+
+		return ThreadDriver.get();
+	}
+	
+    public void setDriverWith(String browser)  {
+    	
+		try {
+			configureDriverPath();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		browser = (browser.isEmpty()) ? GlobalConfig.DEFAULT_BROWSER:browser;
+		
+		if (browser.equalsIgnoreCase(CHROME)) {
+			setDriverForChromeBrowserWithArguments();
+		} else if (browser.equalsIgnoreCase(CHROME)) {
+			ThreadDriver.set(new FirefoxDriver());
+		} else {
+			ThreadDriver.set(new ChromeDriver());
+		}
+    }
+    
+    private void setDriverForChromeBrowserWithArguments() {
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setPlatform(Platform.ANY);
+		ThreadDriver.set(new ChromeDriver(setChromeOptions()));
+    }
+    
+    private ChromeOptions setChromeOptions() {
+		ChromeOptions options = new ChromeOptions();
+		if (GlobalConfig.HEADLESS.equalsIgnoreCase("true")){
+		  options.addArguments("--headless");
+		}
+		options.addArguments("--disable-gpu");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.setExperimentalOption("useAutomationExtension", false);
+		return options;
+    }
+
 	public static void configureDriverPath() throws IOException {
-		if(GlobalConfig.DEFAULT_OS.startsWith("Linux")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/geckodriver";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/chromedriver";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		String firefoxDriverPath = "";
+		String chromeDriverPath = "";
+		
+		if(GlobalConfig.DEFAULT_OS.startsWith(LINUX)) {
+			firefoxDriverPath = System.getProperty(USER_DIR) + LINUX_GECKO_PATH;
+			chromeDriverPath = System.getProperty(USER_DIR) + LINUX_CHROME_PATH;
 		}
-		if(GlobalConfig.DEFAULT_OS.startsWith("Mac")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/geckodriver";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/chromedriver";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		if(GlobalConfig.DEFAULT_OS.startsWith(MAC)) {
+			firefoxDriverPath = System.getProperty(USER_DIR) + MAC_GECKO_PATH;
+			chromeDriverPath = System.getProperty(USER_DIR) + MAC_CHROME_PATH;
 		}
-		if(GlobalConfig.DEFAULT_OS.startsWith("WIN")) {
-			String firefoxDriverPath = System.getProperty("user.dir") + "//src//test//resources//drivers//windows//geckodriver.exe";
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir") + "//src//test//resources//drivers//windows//chromedriver.exe";
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		if(GlobalConfig.DEFAULT_OS.startsWith(WIN)) {
+			firefoxDriverPath = System.getProperty(USER_DIR) + WIN_GECKO_PATH;
+			chromeDriverPath = System.getProperty(USER_DIR) + WIN_CHROME_PATH;
 		}
+		
+		System.setProperty(GECKO_DRIVER, firefoxDriverPath);
+		System.setProperty(CHROME_DRIVER, chromeDriverPath);	
 	}    
 	
-	public WebDriver getDriver() {
-		WebDriver driver = ThreadDriver.get();
-		if (driver == null) {
-			
-			try {
-				configureDriverPath();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-			switch (GlobalConfig.DEFAULT_BROWSER) {
-			case "chrome":
-				DesiredCapabilities caps = DesiredCapabilities.chrome();
-				caps.setPlatform(Platform.ANY);
-				ChromeOptions options = new ChromeOptions();
-				if (GlobalConfig.HEADLESS.equalsIgnoreCase("true")){
-				  options.addArguments("--headless");
-				}
-				options.addArguments("--disable-gpu");
-				options.addArguments("--no-sandbox");
-				options.addArguments("--disable-dev-shm-usage");
-				options.setExperimentalOption("useAutomationExtension", false);
-				driver = new ChromeDriver(options);
-				//WebDriverManager.chromedriver().setup();
-				ThreadDriver.set(driver);
-				break;
-			case "firefox":
-				//WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-				ThreadDriver.set(driver);
-				break;
-			default:
-				//WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				ThreadDriver.set(driver);
-			}
-		}
-		return ThreadDriver.get();
-	}
-
-	public WebDriver getDriver(String browser) {
-		WebDriver driver = ThreadDriver.get();
-		if (driver == null) {
-			
-			try {
-				configureDriverPath();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-			switch (browser) {
-			case "chrome":
-				DesiredCapabilities caps = DesiredCapabilities.chrome();
-				caps.setPlatform(Platform.ANY);
-				ChromeOptions options = new ChromeOptions();
-				if (GlobalConfig.HEADLESS.equalsIgnoreCase("true")){
-					  options.addArguments("--headless");
-					}
-				options.addArguments("--disable-gpu");
-				options.addArguments("--no-sandbox");
-				options.addArguments("--disable-dev-shm-usage");
-				options.setExperimentalOption("useAutomationExtension", false);
-				//WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(options);
-				ThreadDriver.set(driver);
-				break;
-			case "firefox":
-				//WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-				ThreadDriver.set(driver);
-				break;
-			default:
-				//WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				ThreadDriver.set(driver);
-			}
-		}
-		return ThreadDriver.get();
-	}
-
-	public void destroyDriver() {
+/*	public void destroyDriver() {
 		if (ThreadDriver.get() != null) {
 			ThreadDriver.get().quit();
 			ThreadDriver = null;
 		}
-	}
+	}*/
 
     public void removeDriver() // Quits the driver and closes the browser
     {

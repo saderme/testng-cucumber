@@ -31,6 +31,7 @@ Scenario Outline: User can login to BBOS through ID&V
 	When I login using "<username>" credentials
 	Then I reach the BBOS summary screen
 	
+	
 	Examples: 
 		| username | 
 		|66599020  |   
